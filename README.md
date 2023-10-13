@@ -12,7 +12,7 @@ brew install postgresql@14
 pip install psycopg2
 brew services start postgresql@14
 psql postgres
-CREATE ROLE gfreire LOGIN;
+CREATE ROLE youruser LOGIN; -> Update the settings.py file with the user name you created. Line 81 DATABASES
 exit
 cd webapi 
 python manage.py migrate
