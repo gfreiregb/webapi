@@ -18,6 +18,15 @@ cd webapi
 python manage.py migrate  
 python3 manage.py runserver  
 http://127.0.0.1:8000/users/  
+
+To build new data:  
+Example POST:  
+
+{  
+        "id": 1,  
+        "name": "Alice",  
+        "status": "offline"  
+}  
   
 Any changes to existing models or the addition of new models require new migrations to be performed before running the server.  
   
